@@ -11,7 +11,7 @@ namespace RegexEmail_Validate
     {
         public void CheckValidate(string Pattern)
         {
-            Regex code = new Regex(@"^([a][b][c])([_\.\+\-])([a-zA-Z0-9]+)\@([b][r][i][d][g][e][l][a][b][z])\.([c][o])*$");
+            Regex code = new Regex(@"^([a][b][c])([_\.\+\-])([a-zA-Z0-9]+)\@([b][r][i][d][g][e][l][a][b][z])\.([c][o])\.([a-z]{2})*$");
             bool matches=code.IsMatch(Pattern);
             if(matches == true)
             {
